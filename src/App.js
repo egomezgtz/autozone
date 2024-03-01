@@ -8,7 +8,7 @@ const App = () => {
   const [selectedModel, setSelectedModel] = useState('');
 
   useEffect(() => {
-    if (year) {
+    if (year) { 
       const fetchMakes = async () => {
         try {
           const response = await fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json&api_key=YOUR_API_KEY&vehicleType=car&modelyear=${year}`);
